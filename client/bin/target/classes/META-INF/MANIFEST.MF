@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-oauth2-tests-client
+Implementation-Version: 1
+Built-By: makyildiz
+Implementation-Vendor-Id: com.pagatudo.client
+Build-Jdk: 1.8.0_181
+Implementation-URL: http://projects.spring.io/spring-boot/spring-oauth
+ 2-tests-client/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+Main-Class: client.ClientApplication
+

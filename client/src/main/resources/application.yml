@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: client
+server:
+  port: 8181
+  # use a different path for the client (otherwise cookies are shared)
+  context_path: /client
+security:
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      filter-order: 3
+      userInfoUri: http://hostname/api/Members/Statement?accountNumber=1111&beginDate=01/09/2018&endDate=30/09/2018
+    client:
+            authenticationScheme: header
+            grant-type: authorization_code
+            scope: USER_FINANCIAL
+            clientId: client
+            clientSecret: client
+            accessTokenUri: http://hostname/auth/oauth/token
+            userAuthorizationUri: http://hostname/auth/oauth/authorise
+            #clientAuthenticationScheme: form  
